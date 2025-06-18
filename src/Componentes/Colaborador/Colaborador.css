@@ -1,0 +1,101 @@
+.colaborador {
+  width: 280px;
+}
+
+.colaborador .cabecalho {
+  background-color: #f0f0f0;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.colaborador img {
+  width: 100px;
+  border-radius: 50%;
+  position: relative;
+  bottom: -50px;
+}
+
+.colaborador .rodape {
+  background: #ffffff;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 0px 0px 10px 10px;
+  padding-top: 90px;
+  padding-bottom: 40px;
+}
+
+.colaborador .rodape h4 {
+  color: #6278f7;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.colaborador .rodape h5 {
+  font-size: 18px;
+  line-height: 22px;
+  color: #212121;
+  padding: 0 16px;
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+  .colaborador {
+    width: 100%;
+  }
+
+  .colaborador img {
+    width: 80px;
+    bottom: -40px;
+  }
+
+  .colaborador .rodape {
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+
+  .colaborador .rodape h4,
+  .colaborador .rodape h5 {
+    font-size: 16px;
+  }
+}
+
+/* Celulares médios e maiores (481px a 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .colaborador {
+    width: 90%;
+  }
+
+  .colaborador img {
+    width: 90px;
+    bottom: -45px;
+  }
+
+  .colaborador .rodape {
+    padding-top: 80px;
+    padding-bottom: 35px;
+  }
+
+  .colaborador .rodape h4,
+  .colaborador .rodape h5 {
+    font-size: 17px;
+  }
+}
+
+/* Tablets (769px a 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .colaborador {
+    width: 240px;
+  }
+
+  .colaborador img {
+    width: 90px;
+    bottom: -45px;
+  }
+}
+
+/* Telas grandes (acima de 1200px) — mantém o original */
+@media (min-width: 1201px) {
+  .colaborador {
+    width: 280px;
+  }
+}

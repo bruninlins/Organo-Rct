@@ -1,0 +1,55 @@
+.formulario {
+  display: flex;
+  justify-content: center;
+  margin: 80px 0;
+}
+
+.formulario form {
+  max-width: 80%;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 36px 64px;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+  .formulario {
+    margin: 40px 0;
+    padding: 0 10px;
+  }
+
+  .formulario form {
+    padding: 24px 16px;
+    max-width: 100%;
+  }
+}
+
+/* Celulares médios e maiores (481px a 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .formulario {
+    margin: 60px 0;
+    padding: 0 20px;
+  }
+
+  .formulario form {
+    padding: 28px 32px;
+    max-width: 90%;
+  }
+}
+
+/* Tablets (769px a 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .formulario form {
+    padding: 32px 48px;
+    max-width: 85%;
+  }
+}
+
+/* Telas grandes (acima de 1200px) — mantém o original */
+@media (min-width: 1201px) {
+  .formulario form {
+    max-width: 80%;
+    padding: 36px 64px;
+  }
+}

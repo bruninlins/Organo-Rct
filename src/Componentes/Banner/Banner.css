@@ -1,0 +1,55 @@
+.banner {
+  background-color: #6278f7;
+  text-align: center;
+}
+
+.banner img {
+  max-width: 100%;
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+  .banner {
+    padding: 10px;
+  }
+
+  .banner img {
+    height: auto;
+  }
+}
+
+/* Celulares médios e maiores (481px a 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .banner {
+    padding: 15px;
+  }
+
+  .banner img {
+    height: auto;
+  }
+}
+
+/* Tablets (769px a 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .banner {
+    padding: 20px;
+  }
+
+  .banner img {
+    height: auto;
+  }
+}
+
+/* Desktops médios (1025px a 1200px) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .banner {
+    padding: 25px;
+  }
+}
+
+/* Telas grandes (acima de 1200px) */
+@media (min-width: 1201px) {
+  .banner {
+    padding: 30px;
+  }
+}
